@@ -66,8 +66,8 @@ public class UrlHitService {
                 return "Welcome Back";
             }
         }
-        visitorlist.add(new UrlHitCounter(username,0));
 
-        return "New User added";
+
+        return "User not found new User";
     }
 }
