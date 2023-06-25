@@ -44,8 +44,8 @@ public class UrlHitController {
     {
         return urlHitService.getAVisitor(username);
     }
-    @GetMapping("api/v1/count_update/username/{username}")
-    public String countUpdated(String username)
+    @PutMapping("api/v1/count_update/username/{username}")
+    public String countUpdated(@PathVariable  String username)
     {
         return urlHitService.countUpdated(username);
     }
